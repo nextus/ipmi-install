@@ -46,7 +46,7 @@ initIPMI() {
     $IPMI user enable 2
 }
 
-# don't using in programm right now
+# don't used in programm right now
 # some vendor specific tricks
 SCAN_VENDOR() {
     VENDOR=$($IPMI fru print 0 | egrep "Board Mfg[ ]+:" | awk '{print $4}')
